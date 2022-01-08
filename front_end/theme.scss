@@ -1,0 +1,42 @@
+//Scss file used to theme bootstrap
+//See https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+$lima:          #78be20 !default;
+$apple:         #509e2f !default;
+$miner-green:   #007a33 !default;
+$candlelight:   #fdda24 !default;
+$orient:        #005f83 !default;
+
+$pesto:         #7d622e !default;
+$tango:         #e87722 !default;
+$light-turq:    #b1e4e3 !default;
+$scooter:       #2dccd3 !default;
+$cyprus:        #003b49 !default;
+$shuttle-gray:  #63666a !default;
+
+$gold:          #daaa00 !default;
+$silver:        #dce3e4 !default;
+
+$primary:       $apple;
+$secondary:     $shuttle-gray;
+$success:       $lima;
+$info:          $scooter;
+$warning:       $candlelight;
+$danger:        $tango;
+$light:         $silver;
+$dark:          $cyprus;
+
+$yiq-contrasted-threshold: 200;
+
+$jumbotron-bg:  $silver;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$body-bg:       $white;
+$body-color:    $cyprus;
+
+$theme-colors: (
+  "primary": $primary,
+  "success": $success,
+  "danger": $danger
+);
