@@ -1,0 +1,27 @@
+{   "courseid": 1,
+    "quiz_title" : "how to be a dumb idiot 2 - THE SEQUEL",
+    "time_created" : 1520456562025,
+    "open" : true,
+    "questions" : [
+        {
+            "question_content" : "pick answer d",
+            "answers" : [
+                {"answer_text" : "not right a", "correct" : false},
+                {"answer_text" : "not right b", "correct" : false},
+                {"answer_text" : "wrong c", "correct" : false},
+                {"answer_text" : "right d", "correct" : true}
+            ],
+            "correct_points" : 5
+        },
+        {
+            "question_content" : "b is right",
+            "answers" : [
+                {"answer_text" : "wrong a", "correct" : false},
+                {"answer_text" : "right b", "correct" : true},
+                {"answer_text" : "not this either", "correct" : false},
+                {"answer_text" : "incorrect d", "correct" : false}
+            ],
+            "correct_points" : 5
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{   "courseid": 1,
+    "quiz_title" : "how to be a dumb idiot",
+    "time_created" : 1520456199863,
+    "open" : false,
+    "questions" : [
+        {
+            "question_content" : "pick answer c",
+            "answers" : [
+                {"answer_text" : "not right a", "correct" : false},
+                {"answer_text" : "not right b", "correct" : false},
+                {"answer_text" : "correct c", "correct" : true},
+                {"answer_text" : "incorrect d", "correct" : false}
+            ],
+            "correct_points" : 5
+        },
+        {
+            "question_content" : "a is right",
+            "answers" : [
+                {"answer_text" : "PICK THIS", "correct" : true},
+                {"answer_text" : "not right b", "correct" : false},
+                {"answer_text" : "not this either", "correct" : false},
+                {"answer_text" : "incorrect d", "correct" : false}
+            ],
+            "correct_points" : 5
+        }
+    ]
+}

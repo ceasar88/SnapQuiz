@@ -1,0 +1,17 @@
+{   "courseid": null,
+    "quiz_title" : null,
+    "time_created" : null,
+    "open" : false,
+    "questions" : [
+        {
+            "question_content" : null,
+            "answers" : [
+                {"answer_text" : null, "correct" : false},
+                {"answer_text" : null, "correct" : false},
+                {"answer_text" : null, "correct" : false},
+                {"answer_text" : null, "correct" : false}
+            ],
+            "correct_points" : 5
+        }
+    ]
+}
