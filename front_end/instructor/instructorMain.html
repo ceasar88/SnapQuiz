@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<div class="jumbotron text-center">
+  <h1><img src="sq.png" alt="Snap" height="55"></h1>
+</div>
+
+<div class="alert alert-success" id="success-alert">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>Success! </strong>
+  You have created a quiz
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="list-group" id="menu" role="tablist">
+      <a class="list-group-item list-group-action active" id="home-tab" data-toggle="pill" role="tab" href="#home">Home</a>
+      <a class="list-group-item list-group-action" id="quiz-tab" data-toggle="pill" role="tab" href="#quizzes">Quizzes</a>
+      <a class="list-group-item list-group-action" id="stat-tab" data-toggle="pill" role="tab" href="#">Stats</a>
+    </div>
+    <hr />
+    <a class="btn btn-primary btn-block" id="create-link" data-toggle="modal" data-target="#create-quiz" role="button" href="#">Create Quiz</a>
+    <hr />
+  </div>
+  <div class="col-sm-8">
+    <div class="tab-content" id="tabContent">
+      <div class="tab-pane show active" id="home" role="tabpanel">
+        <h3>Welcome, Instructor</h3>
+      </div>
+      <div class="tab-pane" id="quizzes" role="tabpanel">
+        <h3>Quizzes</h3>
+        <div id="quiz-list" class="list-group"></div>
+      </div>
+      <div class="tab-pane" id="stats" role="tabpanel">
+        <h3>Statistics</h3>
+        <button type="button" class="btn btn-success" id="singleStatsButton" data-toggle="modal" data-target="#singleStatsModal">Single Quiz Stats</button>
+        <button type="button" class="btn btn-info" id="overallStatsButton" data-toggle="modal" data-target="#overallStatsModal">Collective Quizzes Stats</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create Quiz Modal -->
+<div class="modal fade" id="create-quiz" role="dialog">
+
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Create Quiz</h4>
+        <button type="button" class="close" id="create-quiz-close" data-dismiss="modal">&times;</button>
+      </div>
+      <form class="create-quiz-form">
+        <div class="modal-body">
+          <!-- form body for quiz creation-->
+
+            <label for="quiz-title-input">Title</label>
+            <input type="text" class="form-control" id="quiz-title-input" placeholder="Quiz Title">
+            <div id="add-question-container"></div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary mr-auto" id="add-question-btn">Add Question</button>
+          <button type="submit" class="btn btn-success" id="submit-quiz-btn" data-dismiss="modal">Submit</button>
+          <button type="reset" class="btn btn-danger" id="modal-reset">Reset</button>
+        </div>
+    </form>
+    </div>
+
+  </div>
+</div>
+
+<!--singleQuiz stats Modal -->
+<div id="singleStatsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Choose A Quiz</h4>
+	<button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group">
+  		<a href="#" class="list-group-item list-group-action" id="quizW" >Quiz 1</a>
+ 		<a href="#" class="list-group-item list-group-action" id="quizX" >Quiz 2</a>
+  		<a href="#" class="list-group-item list-group-action" id="quizY" >Quiz 3</a>
+		<a href="#" class="list-group-item list-group-action" id="quizZ" >Quiz 4</a>
+	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--overall stats Modal -->
+<div id="overallStatsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Collective Quizzes Stats</h4>
+	<button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="chartContainer" ></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
